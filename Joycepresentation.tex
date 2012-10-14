@@ -1,0 +1,186 @@
+\documentclass[compress,handout,10pt]{beamer}
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{100pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{0.5\baselineskip}\olditem}
+
+\usetheme{Singapore}
+\usecolortheme{lily}
+\usefonttheme[onlymath]{serif}
+
+\usepackage{float}
+\floatstyle{boxed}
+\usepackage{colortbl}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{movie15}
+\usepackage{bm}
+\usepackage{verbatim}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\captionsetup[figure]{labelformat=empty}
+
+\newcommand{\mygreen}{\color{green!50!black}}
+\newcommand{\myblue}{\color{blue}}
+\newcommand{\myred}{\color{red}}
+\newcommand{\mycolor}{\color{red}{c}\color{blue}{o}\color{green}{l}\color{orange}{o}\color{cyan}{r}}
+\newcommand{\mysize}{\scriptsize{s}\small{i}\normalsize{z}\Large{e}}
+\newcommand{\myshape}{\textcircled{s}\textit{h}\texttt{a}\textsf{p}\textsc{e}}
+
+\xdefinecolor{titlecolor}{rgb}{.855,.647,.125}
+\setbeamercolor{frametitle}{fg=titlecolor}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamercolor{normal text in math text}{parent=math text}
+
+\setbeamertemplate{navigation symbols}{} %gets rid of navigation symbols
+\setbeamertemplate{footline}[frame number]
+\beamertemplateshadingbackground{blue!5}{yellow!10}
+
+\title{{\color{blue} \LARGE How much Ice do You need?\newline} }
+
+\subtitle{{\color{red} \large Midterm Presentation} }
+
+\author{ 
+%    \vspace{5pt}
+    {\bf{Participant:}} \\ 
+Joyce Tan \\ 
+    \vspace{5pt}
+} 
+\institute{JHU AMS 2012 FALL}
+
+\date{\mygreen Last Complied on \today} 
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Content}
+    
+    \vspace{7pt}
+             \begin{enumerate}
+                 \item Introduction
+ 		 \begin{enumerate}
+                	 \item Sponsor
+		\item Problem Statement
+		\item Deliverables
+		\end{enumerate}
+                 \item Content
+		\begin{enumerate}
+                	 \item Approach
+		\item Possible Results/Analysis
+		\end{enumerate}
+                 \item Conclusion
+		\begin{enumerate}
+                	 \item Deliverables
+		\item Advantages/Disadvantages
+		\item Further Recommendations
+		\end{enumerate}
+             \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sponsor: McDonald's Coporation}
+    \begin{itemize}
+        \item McDonald's Corporation is the world's largest chain of hamburger fastfood restaurants, serving around 68 million customers daily in 119 countries. 
+	\item Mcdonald's primarily sells hamburgers, cheeseburgers, chicken, French fries, breakfast items, soft drinks, milkshakes and desserts. 
+ 	\item In response to healthier consumer taste, the company has expanded its menu to include salads, wraps, smoothies and fruits.
+	 \item Soda drinks is a significant portion of McDonald's business, since it is often offered as a beverage along with the extra-value meals.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem Statement}
+     \begin{itemize}
+         \item Selling soft drinks is a complement to any meal that a customer purchases at McDonald's. However, the server is not accustomed to putting much thought in measuring the amount of ice put in the cup.
+\item This often results in a overly diluted, overly concentrated or overly cold drink for the customer. This is likely to lower overall customer satisfaction, since a drink is a significant complement to a meal. Thus, customers are likely to appreciate if the right amount of ice was added for optimal satisfaction.
+\item To further define this problem, the exogenous variables are the proportion of ice to put in a drink. The endogenous variable would be the resulting temperature and concentration of the drink, as we are assuming that a customer's satisfaction is affected only by the temperature and concentration of the drink.
+     \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Deliverables}
+\begin{enumerate}
+ \item From Team to Sponsor
+\begin{itemize}
+    \item A table of optimal ratios for each different type of soda (namely Coca Cola, Sprite, Fanta Orange, Diet Coke),
+    \item Matlab code with complete set of documentations that resulting temperature and dilution based on specific heat capacities and ice proportions,
+    \item Numerical experiment results reporting success rate of different ice ratios,
+    \item Technical report and presentations summarizing the work. 
+\end{itemize}
+
+\item From Sponsor to Team
+\begin{itemize}
+    \item Sufficient supply of the 4 different sodas we are concentrating on,
+    \item Computing resources,
+    \item Timely responses to inquiries.
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Approach 1: Experimental}
+
+\begin {itemize}
+\item Experimenting with different types of soda - namely  McDonald's, Coca Cola, Sprite, Fanta Orange, and Diet Coke.
+\item Using different proportions of ice, we will then find the resulting temperature of the drink, as well as calculate the resulting dilution of the drink. 
+\item By experiment, we will test out which combination of temperature and dilution will yield the highest satisfaction from the test subjects. In doing this, we assume that all customers have the same preferences for combinations of temperature and dilution.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Approach 2: Physics-based}
+
+
+\begin {itemize}
+\item Utilizing the specific heat capacities of soda and ice (already found as specific values), we can calculate the different temperatures and dilution that the resulting drink will be.
+\item Using a similar survey of our sample group, we can determine which is the most popular combination of temperature and dilution. From there, we can figure out the optimal combination of ice proportion as well.
+\end{itemize}
+
+\end{frame}
+ 
+
+
+
+\begin{frame}
+    \frametitle{Possible Results/Analysis}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deliverable}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Advantages/Disadvantages}
+\begin{enumerate}
+\item Advantages
+\begin {itemize}
+\item Utilizing the specific heat capacities of soda and ice (already found as specific values), we can calculate the different temperatures and dilution that the resulting drink will be.
+\item Using a similar survey of our sample group, we can determine which is the most popular combination of temperature and dilution. From there, we can figure out the optimal combination of ice proportion as well.
+\end{itemize}
+\item Disadvantages
+\begin{itemize}
+\item Assumption that all customers have the same taste regarding temperature and dilution is false
+\item Desired temperature of drink may also depends on location of branch and climate
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Further Recommendations}
+\begin{itemize}
+\item Perform experiements on different days with different climates
+\item Split sample group based on gender and age
+\end{itemize}
+\end{frame}
+
+\end{document}
